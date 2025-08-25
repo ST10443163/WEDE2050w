@@ -1,3 +1,4 @@
+/*Body styling (The IIE, 2025)*/
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -5,29 +6,35 @@ body {
     background-color: #FDF2DB;
     color: #4B2E27;
 }
+/*Header styling (The IIE, 2025)*/
 header {
     display: flex;
-    align-items: center;      /* Vertically centers items */
+    align-items: center;
     background-color: #FDF2DB;
     padding: 10px;
 }
+/*Logo styling(The IIE, 2025)*/
 header img {
     max-width: 180px;
-    margin-right: 100px;       /* Space between logo and text */
+    margin-right: 100px;
 }
+/*Name styling(The IIE, 2025)*/
 header h1 {
     font-size: 60px;
     margin: 0.5rem 0 0.2rem;
 }
+/*Slogan styling (The IIE, 2025)*/
 header p {
     font-size: 30px;
     color: #f08080;
     margin: 0;
 }
+/*Navigation bar styling (The IIE, 2025)*/
 nav {
     background-color: #7FB1B9;
     padding: 0.5rem 0;
 }
+/*Navigation bar tex styling (The IIE, 2025)*/
 nav a {
     color: #4B2E27;
     text-decoration: none;
@@ -35,19 +42,23 @@ nav a {
     font-weight: bold;
     padding-left: 50px;
 }
+/*Section styling (The IIE, 2025)*/
 section {
     padding: 3rem 2rem;
     max-width: 1100px;
     margin: auto;
 }
+/*Section color styling (The IIE, 2025)*/
 section.alt {
     background-color: #A8D5BA;
 }
+/*Heading styling (The IIE, 2025)*/
 h2 {
     color: #4B2E27;
     font-size: 40px;
     margin-bottom: 1rem;
 }
+/*Button (The IIE, 2025)*/
 button.cta {
     background-color: #F8A08E;
     border: none;
@@ -57,13 +68,20 @@ button.cta {
     border-radius: 8px;
     cursor: pointer;
 }
+/*Footer styling (The IIE, 2025)*/
 footer {
     text-align: center;
     padding: 1rem;
     background-color: #7FB1B9;
     font-size: 20px;
 }
+/*Rights styling (The IIE, 2025)*/
 p.rights {
     text-align: center;
     font-size: 10px;
 }
+
+/*
+References:
+- The IIE. 2025. Web Development [WEDE5020 Module Manual]. The Independent Institute of Education: Unpublished.
+*/
