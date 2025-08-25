@@ -23,6 +23,11 @@ compassion (The IIE, 2025).
 
 ## **Design and user experience:**
 ### Color scheme:
+- Soft green `#A8D5BA`
+- Warm beige `#F6E6CC`
+- Gentle brown `#8B6F47`
+- Clarity color: white `#ffffff`
+- Accent color: light coral `#f08080`
 ### Typography:
 ### Layout and design:
 ### User experience considerations:
