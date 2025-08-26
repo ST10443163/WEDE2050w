@@ -1,3 +1,7 @@
+html body {
+    cursor: url("Images/HeartPawPrint.png"), auto;
+}
+  
 /*Body styling (The IIE, 2025)*/
 body {
     margin: 0;
