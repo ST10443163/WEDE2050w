@@ -33,6 +33,12 @@ header p {
     color: #f08080;
     margin: 0;
 }
+/*Header subtext styling (The IIE, 2025)*/
+p.sub {
+    font-size: 20px;
+    color: #FD9F4A;
+    margin: 0.5rem 0 0.2rem;
+}
 /*Navigation bar styling (The IIE, 2025)*/
 nav {
     background-color: #7FB1B9;
