@@ -5,6 +5,7 @@ html body {
 /*Body styling (The IIE, 2025)*/
 body {
     margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     background-color: #FDF2DB;
@@ -43,6 +44,8 @@ p.sub {
 nav {
     background-color: #7FB1B9;
     padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-around;
 }
 /*Navigation bar tex styling (The IIE, 2025)*/
 nav a {
@@ -54,9 +57,9 @@ nav a {
 }
 /*Section styling (The IIE, 2025)*/
 section {
-    padding: 3rem 2rem;
-    max-width: 1100px;
-    margin: auto;
+    padding: 20px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 /*Section color styling (The IIE, 2025)*/
 section.alt {
