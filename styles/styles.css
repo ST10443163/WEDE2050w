@@ -270,14 +270,14 @@ textarea {
 /* Checkbox container for proper alignment */
 .checkbox-container {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 20px;
 }
 
 /* Checkbox input spacing */
 .checkbox-container input {
     margin-right: 10px;
-    margin-top: 5px;
+    margin-top: 0;
 }
 
 /* Form action buttons container */
@@ -633,13 +633,13 @@ legend {
 /* Checkbox group styling */
 .checkbox-group {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .checkbox-group input {
   width: auto;
   margin-right: 10px;
-  margin-top: 5px;
+  margin-top: 0;
 }
 
 .checkbox-group label {
@@ -704,6 +704,7 @@ legend {
   margin-right: 12px;
   transform: scale(1.2);
   flex-shrink: 0;
+  width: auto; /* Prevent checkbox from stretching to full width */
 }
 
 .checkbox-option label {
@@ -722,6 +723,11 @@ legend {
   justify-content: flex-start;
   text-align: left;
   width: 100%; /* Ensure full width for left-aligned boxes */
+}
+
+/* Do not append required asterisks to interest option labels */
+.checkbox-group-column label:after {
+  content: "";
 }
 
 /* Align donation options */
