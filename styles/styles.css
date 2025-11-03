@@ -692,6 +692,8 @@ legend {
   background: rgba(255, 255, 255, 0.7);
   border-radius: 6px;
   transition: background-color 0.3s ease;
+  width: 100%; /* Fixed width for interest boxes */
+  box-sizing: border-box;
 }
 
 .checkbox-option:hover {
@@ -701,12 +703,25 @@ legend {
 .checkbox-option input[type="checkbox"] {
   margin-right: 12px;
   transform: scale(1.2);
+  flex-shrink: 0;
 }
 
 .checkbox-option label {
   margin-bottom: 0;
   font-weight: normal;
   cursor: pointer;
+  flex-grow: 1;
+}
+
+/* Left-aligned checkbox group for volunteer interests */
+.checkbox-group-column.left-aligned {
+  align-items: flex-start;
+}
+
+.checkbox-group-column.left-aligned .checkbox-option {
+  justify-content: flex-start;
+  text-align: left;
+  width: 100%; /* Ensure full width for left-aligned boxes */
 }
 
 /* Align donation options */
@@ -1126,6 +1141,11 @@ These styles apply when screen width is 768px or less
         width: 45px;
         height: 45px;
     }
+    
+    /* Fix checkbox options on mobile */
+    .checkbox-option {
+        width: 100%;
+    }
 }
 
 /* 
@@ -1165,5 +1185,10 @@ These styles apply when screen width is 480px or less
     
     fieldset {
         padding: 15px;
+    }
+    
+    /* Ensure checkbox options are full width on very small screens */
+    .checkbox-option {
+        width: 100%;
     }
 }
