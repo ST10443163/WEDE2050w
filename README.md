@@ -1,8 +1,7 @@
-# Healing Tails Website 🌟
+# Healing Tails Website
 
-![Healing Tails](https://via.placeholder.com/800x400/4B2E27/FFFFFF?text=Healing+Tails+-+Where+Every+Tail+Heals+a+Heart)
 
-## 🐾 Organization Overview
+## Organization Overview
 
 ### Name
 **Healing Tails** – Where every tail heals a heart (The IIE, 2025)
@@ -22,14 +21,14 @@ A world where every rescued animal and person in need has a opportunity to heal 
 - Animal lovers looking to contribute (The IIE, 2025)
 - Potential donors, sponsors, and partners (The IIE, 2025)
 
-## 🎯 Website Goals & Objectives
+## Website Goals & Objectives
 
 - Increase awareness of Healing Tails' mission and programs (The IIE, 2025)
 - Drive engagement through volunteer sign-ups, donations, and adoption applications (The IIE, 2025)
 - Provide resources, success stories, and educational materials for the community (The IIE, 2025)
 - Establish a visually appealing, user-friendly platform that reflects the brand's warmth and compassion (The IIE, 2025)
 
-## ✨ Website Features & Functionality
+## Website Features & Functionality
 
 ### Complete Website Structure
 - **Home** - Organization overview and impact showcase
@@ -49,7 +48,7 @@ A world where every rescued animal and person in need has a opportunity to heal 
 - **Newsletter Subscription**
 - **Back-to-top** button for better UX
 
-## 🎨 Design & User Experience
+## Design & User Experience
 
 ### Color Scheme
 ```css
@@ -61,19 +60,128 @@ A world where every rescued animal and person in need has a opportunity to heal 
     --light-coral: #f08080;     /* Accent color - buttons & highlights */
     --accent-blue: #7FB1B9;     /* Navigation and footer */
 }
+```
+
 ### Typography:
+- Primary Font: 'Poppins', sans-serif - Clean, modern, accessible
+- Font Sizes: Responsive scaling from 16px to 48px
+- Line Height: 1.6 for optimal readability
+
 ### Layout and design:
+- Mobile-First responsive design
+- Card-based sections for organized content
+- Consistent spacing and visual hierarchy
+- Warm, comforting aesthetic reflecting compassion
+- Clear call-to-action buttons throughout
+
 ### User experience considerations:
-### Wireframes:
+- Intuitive navigation with clear menu structure
+- Fast loading times with optimized assets
+- Accessibility-first approach (WCAG compliant)
+- Progressive enhancement for all devices
+- Form validation with helpful error messages
 
-## **Technical requirements:**
-- HTML
-- CSS
-- JavaScript
+## Technical requirements:
+###Technologies used:
+- HTML5 - Semantic, accessible markup
+- CSS3 - Modern styling with Flexbox/Grid
+- Vanilla JavaScript - No frameworks for optimal performance
 
-## **Timeline and milestone:**
+### Browser compatibility:
+- Chrome 90+
+- Firefox 88+
+- Safari 14+
+- Edge 90+
 
-## **Budget:**
+### File structure:
+healing-tails/
+├── index.html
+├── about.html
+├── programs.html
+├── get-involved.html
+├── volunteer-donate.html
+├── adoption.html
+├── contact.html
+├── styles/
+│   └── styles.css
+├── js/
+│   └── script.js
+├── images/
 
-## **References:**
+## Timeline and milestone:
+### Phase 1: Foundation (Week 1)
+- Project setup and file structure
+- Basic HTML templates for all pages
+- CSS foundation and color scheme
+### Phase 2: Core Development (Weeks 2-3)
+- Complete all page layouts
+- Implement responsive design
+- Basic JavaScript functionality
+### Phase 3: Enhanced Features (Week 4)
+- Form validation systems
+- Interactive elements (modals, filters)
+- Accessibility improvements
+### Phase 4: Polish & Testing (Week 5)
+- Cross-browser testing
+- Performance optimization
+- Documentation completion
+
+## Budget:
+### Development Costs
+- Website Development: Donated (Volunteer-based)
+- Hosting: To be determined
+- Domain: To be determined
+- Maintenance: Volunteer-based
+
+### Resource Requirements
+- Web Hosting with form processing capabilities
+- Email Service for organization communications
+- SSL Certificate for secure connections
+- Backend Integration for form submissions (future enhancement)
+
+## Accessibility
+This website prioritizes accessibility with:
+- Semantic HTML5 structure
+- ARIA labels and landmarks
+- Keyboard navigation support
+- High contrast color ratios (4.5:1 minimum)
+- Focus indicators
+- Screen reader compatibility
+- Reduced motion support
+
+## Contributing
+We welcome contributions to improve the Healing Tails website!
+- Fork the project
+- Create a feature branch (git checkout -b feature/AmazingFeature)
+- Commit your changes (git commit -m 'Add some AmazingFeature')
+- Push to the branch (git push origin feature/AmazingFeature)
+- Open a Pull Request
+
+## Development Guidelines
+- Follow existing code style and structure
+- Test across multiple browsers and devices
+- Ensure all forms maintain validation
+- Verify accessibility compliance
+- Update documentation as needed
+
+## Support & Contact
+Healing Tails Organization
+- Email: hello@healingtails.co.za
+- Phone: 083-791-3977
+- Address: Healing Tail HQ, Port Elizabeth, South Africa
+
+## Technical Support
+- Create an issue in the project repository
+- Contact the development team
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## References
 - The IIE. 2025. Web Development [WEDE5020 Module Manual]. The Independent Institute of Education: Unpublished.
+
+## Acknowledgments
+- All the volunteers and supporters of Healing Tails
+- The rescue animals who make healing possible
+- The trauma survivors who inspire our work
+- Open source communities for tools and inspiration
