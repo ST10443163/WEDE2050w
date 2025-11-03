@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healing Tails | Adoption ❤️</title>
+  <!-- Main stylesheet for consistent branding and layout -->
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <!-- Website header with logo and organization information -->
+  <header>
+    <img src="images/HTlogo.png" alt="Healing Tails Logo - A heart and pawprint symbol">
+    <div class="header-text">
+      <h1>Healing Tails</h1>
+      <p>Where Every Tail Heals a Heart</p>
+      <p class="sub">Pairing trained rescue animals with trauma survivors to bring comfort, joy and healing</p>
+    </div>
+  </header>
+  
+  <!-- Main navigation menu for site-wide page access -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="programs.html">Programs</a>
+    <a href="get-involved.html">Get Involved</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Main content area containing all adoption sections -->
+  <main>
+    <!-- Adoption Introduction Section -->
+    <section class="alt">
+      <h2>Find Your Healing Companion</h2>
+      <p>
+        Every animal at Healing Tails has a story of resilience and hope. When you adopt from us, 
+        you're not just giving an animal a home - you're welcoming a healing companion who understands 
+        struggle and knows the power of love and connection.
+      </p>
+      <p>
+        Our adoption process ensures the perfect match between animal and human, creating bonds 
+        that heal both hearts. Browse our available animals below and find your perfect match.
+      </p>
+    </section>
+
+    <!-- Animal Filter Section -->
+    <section class="alt">
+      <h2>Find Your Perfect Match</h2>
+      <div class="animal-filters">
+        <button class="filter-btn active" data-filter="all">All Animals</button>
+        <button class="filter-btn" data-filter="dog">Dogs</button>
+        <button class="filter-btn" data-filter="cat">Cats</button>
+        <button class="filter-btn" data-filter="rabbit">Rabbits</button>
+        <button class="filter-btn" data-filter="bird">Birds</button>
+      </div>
+    </section>
+
+    <!-- Dogs Category -->
+    <section class="alt animal-category" id="dogs">
+      <h2>Dogs Waiting for Homes</h2>
+      <p class="category-description">
+        Our rescue dogs have been through training and socialization programs. They're ready 
+        to become loyal companions and bring joy to your life.
+      </p>
+      
+      <div class="animal-grid">
+        <!-- Dog 1 -->
+        <div class="animal-card" data-category="dog">
+          <div class="animal-image">
+            <img src="images/dog1.jpg" alt="Buddy the Golden Retriever mix" onerror="this.src='https://via.placeholder.com/300x200/4B2E27/FFFFFF?text=Buddy+the+Dog'">
+            <div class="animal-status">Available</div>
+          </div>
+          <div class="animal-info">
+            <h3>Buddy</h3>
+            <div class="animal-details">
+              <p><strong>Breed:</strong> Golden Retriever Mix</p>
+              <p><strong>Age:</strong> 3 years</p>
+              <p><strong>Gender:</strong> Male</p>
+              <p><strong>Size:</strong> Medium</p>
+            </div>
+            <div class="personality-tags">
+              <span class="tag loyal">Loyal</span>
+              <span class="tag gentle">Gentle</span>
+              <span class="tag playful">Playful</span>
+            </div>
+            <div class="animal-bio">
+              <p>Buddy was rescued from a neglectful situation but has shown incredible resilience. 
+              He's a gentle soul who loves quiet companionship and leisurely walks. Perfect for 
+              someone looking for a calm, devoted friend.</p>
+            </div>
+            <button class="cta adopt-btn" data-animal="Buddy">Adopt Buddy</button>
+          </div>
+        </div>
+        
+        <!-- Dog 2 -->
+        <div class="animal-card" data-category="dog">
+          <div class="animal-image">
+            <img src="images/dog2.jpg" alt="Luna the Border Collie" onerror="this.src='https://via.placeholder.com/300x200/4B2E27/FFFFFF?text=Luna+the+Dog'">
+            <div class="animal-status">Available</div>
+          </div>
+          <div class="animal-info">
+            <h3>Luna</h3>
+            <div class="animal-details">
+              <p><strong>Breed:</strong> Border Collie</p>
+              <p><strong>Age:</strong> 2 years</p>
+              <p><strong>Gender:</strong> Female</p>
+              <p><strong>Size:</strong> Medium</p>
+            </div>
+            <div class="personality-tags">
+              <span class="tag energetic">Energetic</span>
+              <span class="tag intelligent">Intelligent</span>
+              <span class="tag affectionate">Affectionate</span>
+            </div>
+            <div class="animal-bio">
+              <p>Luna is a bright, energetic girl who thrives with mental stimulation and activity. 
+              She's incredibly smart and would excel in a home where she can learn new tricks and 
+              go on adventures. Great for active individuals or families.</p>
+            </div>
+            <button class="cta adopt-btn" data-animal="Luna">Adopt Luna</button>
+          </div>
+        </div>
+        
+        <!-- Dog 3 -->
+        <div class="animal-card" data-category="dog">
+          <div class="animal-image">
+            <img src="images/dog3.jpg" alt="Rex the Labrador" onerror="this.src='https://via.placeholder.com/300x200/4B2E27/FFFFFF?text=Rex+the+Dog'">
+            <div class="animal-status">Available</div>
+          </div>
+          <div class="animal-info">
+            <h3>Rex</h3>
+            <div class="animal-details">
+              <p><strong>Breed:</strong> Labrador Retriever</p>
+              <p><strong>Age:</strong> 4 years</p>
+              <p><strong>Gender:</strong> Male</p>
+              <p><strong>Size:</strong> Large</p>
+            </div>
+            <div class="personality-tags">
+              <span class="tag friendly">Friendly</span>
+              <span class="tag patient">Patient</span>
+              <span class="tag loyal">Loyal</span>
+            </div>
+            <div class="animal-bio">
+              <p>Rex is the definition of a gentle giant. Despite his size, he's incredibly gentle 
+              and patient, making him wonderful with children. He's been through our therapy dog 
+              training and would make an excellent emotional support animal.</p>
+            </div>
+            <button class="cta adopt-btn" data-animal="Rex">Adopt Rex</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cats Category -->
+    <section class="alt animal-category" id="cats">
+      <h2>Cats Seeking Forever Homes</h2>
+      <p class="category-description">
+        Our feline friends offer quiet companionship and unconditional love. Each has a unique 
+        personality ready to brighten your home.
+      </p>
+      
+      <div class="animal-grid">
+        <!-- Cat 1 -->
+        <div class="animal-card" data-category="cat">
+          <div class="animal-image">
+            <img src="images/cat1.jpg" alt="Whiskers the Tabby Cat" onerror="this.src='https://via.placeholder.com/300x200/4B2E27/FFFFFF?text=Whiskers+the+Cat'">
+            <div class="animal-status">Available</div>
+          </div>
+          <div class="animal-info">
+            <h3>Whiskers</h3>
+            <div class="animal-details">
+              <p><strong>Breed:</strong> Domestic Short Hair</p>
+              <p><strong>Age:</strong> 5 years</p>
+              <p><strong>Gender:</strong> Male</p>
+              <p><strong>Size:</strong> Medium</p>
+            </div>
+            <div class="personality-tags">
+              <span class="tag independent">Independent</span>
+              <span class="tag calm">Calm</span>
+              <span class="tag observant">Observant</span>
+            </div>
+            <div class="animal-bio">
+              <p>Whiskers is a mature gentleman who appreciates quiet companionship. He's not overly 
+              demanding but will happily curl up beside you for movie nights. Perfect for someone 
+              who wants a low-maintenance but affectionate companion.</p>
+            </div>
+            <button class="cta adopt-btn" data-animal="Whiskers">Adopt Whiskers</button>
+          </div>
+        </div>
+        
+        <!-- Cat 2 -->
+        <div class="animal-card" data-category="cat">
+          <div class="animal-image">
+            <img src="images/cat2.jpg" alt="Mittens the Calico" onerror="this.src='https://via.placeholder.com/300x200/4B2E27/FFFFFF?text=Mittens+the+Cat'">
+            <div class="animal-status">Available</div>
+          </div>
+          <div class="animal-info">
+            <h3>Mittens</h3>
+            <div class="animal-details">
+              <p><strong>Breed:</strong> Calico</p>
+              <p><strong>Age:</strong> 2 years</p>
+              <p><strong>Gender:</strong> Female</p>
+              <p><strong>Size:</strong> Small</p>
+            </div>
+            <div class="personality-tags">
+              <span class="tag playful">Playful</span>
+              <span class="tag curious">Curious</span>
+              <span class="tag affectionate">Affectionate</span>
+            </div>
+            <div class="animal-bio">
+              <p>Mittens is a bundle of energy and curiosity! She loves exploring her surroundings 
+              and will keep you entertained with her antics. She's very affectionate once she warms 
+              up to you and enjoys being the center of attention.</p>
+            </div>
+            <button class="cta adopt-btn" data-animal="Mittens">Adopt Mittens</button>
+          </div>
+        </div>
+        
+        <!-- Cat 3 -->
+        <div class="animal-card" data-category="cat">
+          <div class="animal-image">
+            <img src="images/cat3.jpg" alt="Shadow the Black Cat" onerror="this.src='https://via.placeholder.com/300x200/4B2E27/FFFFFF?text=Shadow+the+Cat'">
+            <div class="animal-status">Available</div>
+          </div>
+          <div class="animal-info">
+            <h3>Shadow</h3>
+            <div class="animal-details">
+              <p><strong>Breed:</strong> Domestic Short Hair</p>
+              <p><strong>Age:</strong> 1 year</p>
+              <p><strong>Gender:</strong> Male</p>
+              <p><strong>Size:</strong> Small</p>
+            </div>
+            <div class="personality-tags">
+              <span class="tag shy">Shy</span>
+              <span class="tag gentle">Gentle</span>
+              <span class="tag loyal">Loyal</span>
+            </div>
+            <div class="animal-bio">
+              <p>Shadow is a bit shy at first but once he trusts you, he's the most loyal companion. 
+              He prefers quiet environments and would do best in a calm home where he can feel safe 
+              and gradually build confidence.</p>
+            </div>
+            <button class="cta adopt-btn" data-animal="Shadow">Adopt Shadow</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rabbits Category -->
+    <section class="alt animal-category" id="rabbits">
+      <h2>Rabbits Hoping for Homes</h2>
+      <p class="category-description">
+        Gentle and quiet, our rescue rabbits make wonderful companions for those seeking 
+        a more subtle but equally loving animal friend.
+      </p>
+      
+      <div class="animal-grid">
+        <!-- Rabbit 1 -->
+        <div class="animal-card" data-category="rabbit">
+          <div class="animal-image">
+            <img src="images/rabbit1.jpg" alt="Cotton the White Rabbit" onerror="this.src='https://via.placeholder.com/300x200/4B2E27/FFFFFF?text=Cotton+the+Rabbit'">
+            <div class="animal-status">Available</div>
+          </div>
+          <div class="animal-info">
+            <h3>Cotton</h3>
+            <div class="animal-details">
+              <p><strong>Breed:</strong> Mini Lop</p>
+              <p><strong>Age:</strong> 1.5 years</p>
+              <p><strong>Gender:</strong> Female</p>
+              <p><strong>Size:</strong> Small</p>
+            </div>
+            <div class="personality-tags">
+              <span class="tag gentle">Gentle</span>
+              <span class="tag curious">Curious</span>
+              <span class="tag calm">Calm</span>
+            </div>
+            <div class="animal-bio">
+              <p>Cotton is as soft as her name suggests! She's a gentle soul who enjoys exploring 
+              her environment at her own pace. She would thrive in a quiet home where she can have 
+              supervised playtime and plenty of hay to munch on.</p>
+            </div>
+            <button class="cta adopt-btn" data-animal="Cotton">Adopt Cotton</button>
+          </div>
+        </div>
+        
+        <!-- Rabbit 2 -->
+        <div class="animal-card" data-category="rabbit">
+          <div class="animal-image">
+            <img src="images/rabbit2.jpg" alt="Thumper the Brown Rabbit" onerror="this.src='https://via.placeholder.com/300x200/4B2E27/FFFFFF?text=Thumper+the+Rabbit'">
+            <div class="animal-status">Available</div>
+          </div>
+          <div class="animal-info">
+            <h3>Thumper</h3>
+            <div class="animal-details">
+              <p><strong>Breed:</strong> Rex</p>
+              <p><strong>Age:</strong> 2 years</p>
+              <p><strong>Gender:</strong> Male</p>
+              <p><strong>Size:</strong> Medium</p>
+            </div>
+            <div class="personality-tags">
+              <span class="tag playful">Playful</span>
+              <span class="tag social">Social</span>
+              <span class="tag energetic">Energetic</span>
+            </div>
+            <div class="animal-bio">
+              <p>Thumper lives up to his name with his playful hopping! He's a social rabbit who 
+              enjoys interaction and would make a wonderful companion for someone who can provide 
+              plenty of attention and enrichment activities.</p>
+            </div>
+            <button class="cta adopt-btn" data-animal="Thumper">Adopt Thumper</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Birds Category -->
+    <section class="alt animal-category" id="birds">
+      <h2>Feathered Friends</h2>
+      <p class="category-description">
+        Our rescue birds bring music and color into any home. Each has a unique personality 
+        and can form deep bonds with their human companions.
+      </p>
+      
+      <div class="animal-grid">
+        <!-- Bird 1 -->
+        <div class="animal-card" data-category="bird">
+          <div class="animal-image">
+            <img src="images/bird1.jpg" alt="Sunny the Parakeet" onerror="this.src='https://via.placeholder.com/300x200/4B2E27/FFFFFF?text=Sunny+the+Bird'">
+            <div class="animal-status">Available</div>
+          </div>
+          <div class="animal-info">
+            <h3>Sunny</h3>
+            <div class="animal-details">
+              <p><strong>Species:</strong> Parakeet</p>
+              <p><strong>Age:</strong> 3 years</p>
+              <p><strong>Gender:</strong> Male</p>
+              <p><strong>Size:</strong> Small</p>
+            </div>
+            <div class="personality-tags">
+              <span class="tag vocal">Vocal</span>
+              <span class="tag social">Social</span>
+              <span class="tag bright">Bright</span>
+            </div>
+            <div class="animal-bio">
+              <p>Sunny is a cheerful little bird who loves to chirp and sing throughout the day. 
+              He's very social and enjoys interacting with his human companions. He would bring 
+              joyful noise and vibrant energy to any home.</p>
+            </div>
+            <button class="cta adopt-btn" data-animal="Sunny">Adopt Sunny</button>
+          </div>
+        </div>
+        
+        <!-- Bird 2 -->
+        <div class="animal-card" data-category="bird">
+          <div class="animal-image">
+            <img src="images/bird2.jpg" alt="Sky the Cockatiel" onerror="this.src='https://via.placeholder.com/300x200/4B2E27/FFFFFF?text=Sky+the+Bird'">
+            <div class="animal-status">Available</div>
+          </div>
+          <div class="animal-info">
+            <h3>Sky</h3>
+            <div class="animal-details">
+              <p><strong>Species:</strong> Cockatiel</p>
+              <p><strong>Age:</strong> 4 years</p>
+              <p><strong>Gender:</strong> Female</p>
+              <p><strong>Size:</strong> Small</p>
+            </div>
+            <div class="personality-tags">
+              <span class="tag gentle">Gentle</span>
+              <span class="tag intelligent">Intelligent</span>
+              <span class="tag calm">Calm</span>
+            </div>
+            <div class="animal-bio">
+              <p>Sky is a gentle, intelligent bird who enjoys quiet companionship. She can learn 
+              simple tunes and enjoys head scratches once she trusts you. She would be perfect 
+              for someone looking for a feathered friend with a calm demeanor.</p>
+            </div>
+            <button class="cta adopt-btn" data-animal="Sky">Adopt Sky</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Adoption Process Section -->
+    <section class="alt">
+      <h2>Our Adoption Process</h2>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <h3>Application</h3>
+          <p>Fill out our adoption application form with your information and preferences.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <h3>Interview</h3>
+          <p>We'll schedule a phone or in-person interview to discuss your application.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <h3>Home Visit</h3>
+          <p>For some animals, we conduct a home visit to ensure a safe environment.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <h3>Meet & Greet</h3>
+          <p>You'll meet your potential new companion to ensure it's a good match.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">5</div>
+          <h3>Adoption</h3>
+          <p>Complete the paperwork and welcome your new healing companion home!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site footer with copyright and organization information -->
+  <footer>
+    <p>
+      Healing Tails is a small non-profit organization.<br>
+      Together we are creating a world where every tail heals a heart.
+    </p>
+    <p class="rights">&copy; 2025 Healing Tails. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript file for interactive features -->
+  <script src="js/script.js"></script>
+</body>
+</html>

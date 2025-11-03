@@ -3,116 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Healing Tails | Contact &#128153</title>
-  <!--Linking CSS (The IIE, 2025)-->
-  <link rel="stylesheet" href="Style/Styles.css">
+  <title>Healing Tails | Contact ❤️</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
-<!--Body (The IIE, 2025)-->
 <body>
-    <!--Header (The IIE, 2025)-->
-    <header>
-        <!--Logo (The IIE, 2025)-->
-        <img src="Images/HTlogo.png" alt="Healing Tails Logo"> <!--Logo image (OpenAI, 2025)-->
-        <!--Header info(The IIE, 2025)-->
-        <div class="header-text">
-            <h1>Healing Tails</h1>
-            <p>Where Every Tail Heals a Heart</p>
-            <p class="sub">Pairing trained rescue animals with trauma survivors to bring comfort, joy and healing</p>
+  <header>
+    <img src="images/HTlogo.png" alt="Healing Tails Logo - A heart and pawprint symbol">
+    <div class="header-text">
+      <h1>Healing Tails</h1>
+      <p>Where Every Tail Heals a Heart</p>
+      <p class="sub">Pairing trained rescue animals with trauma survivors to bring comfort, joy and healing</p>
+    </div>
+  </header>
+  
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="programs.html">Programs</a>
+    <a href="get-involved.html">Get Involved</a>
+    <a href="volunteer-donate.html">Volunteer & Donate</a>
+    <a href="adoption.html">Adopt</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <section class="alt">
+      <h2>Get In Touch</h2>
+      <div class="contact-info">
+        <p><strong>Email:</strong> hello@healingtails.co.za</p>
+        <p><strong>Phone:</strong> 083-791-3977</p>
+        <p><strong>Address:</strong> Healing Tail HQ, Port Elizabeth, South Africa</p>
+      </div>
+    </section>
+
+    <section class="alt">
+      <h2>Send Us a Message</h2>
+      <form id="contactForm">
+        <label for="fname">Full Name *</label>
+        <input type="text" id="fname" name="fname" required placeholder="John Doe">
+        
+        <label for="femail">Email Address *</label>
+        <input type="email" id="femail" name="femail" required placeholder="johndoe@gmail.com">
+        
+        <label for="fphone">Phone Number (optional)</label>
+        <input type="tel" id="fphone" name="fphone" placeholder="083-999-9999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        
+        <label for="fsubject">Subject *</label>
+        <input type="text" id="fsubject" name="fsubject" required placeholder="How can we help you?">
+        
+        <label for="fmessage">Message *</label>
+        <textarea id="fmessage" name="fmessage" rows="5" required placeholder="Tell us more about your inquiry..."></textarea>
+        
+        <div class="checkbox-container">
+          <input type="checkbox" id="consent" name="consent" value="consent" required>
+          <label for="consent">I agree for Healing Tails to contact me regarding my inquiry.</label>
         </div>
-    </header>
-    <!--Navigation bar (The IIE, 2025)-->
-    <nav>
-        <a href="Home.html">Home</a>
-        <a href="About.html">About</a>
-        <a href="Programs.html">Programs</a>
-        <a href="GetInvolved.html">Get Involved</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <br>
-    <!--Get in touch section (The IIE, 2025)-->
-    <section class="alt">
-        <h2>Get in touch</h2>
-        <p>
-            Email: hello@healingtails.co.za
-            <br>
-            Phone: 083-791-3977
-            <br>
-            Address: Healing Tail HQ, Port Elizabeth, South Africa
-        </p>
+        
+        <button type="submit" class="cta">Send Message</button>
+      </form>
     </section>
-    <br>
-    <!--Send message section (The IIE, 2025)-->
+
     <section class="alt">
-        <h2>Send us a message</h2>
-        <p>
-            <!--Form (W3Schools, 2025)-->
-            <form>
-                <!--Name (W3Schools, 2025)-->
-                <label for="fname">Full name</label>
-                <br>
-                <input type="text" id="fname" name="fname" placeholder="John Doe">
-                <br>
-                <!--Email (W3Schools, 2025)-->
-                <label for="femail">Email</label>
-                <br>
-                <input type="email" id="femail" name="femail" placeholder="johndoe@gmail.com">
-                <br>
-                <!--Phone (W3Schools, 2025)-->
-                <label for="fphone">Phone (optional)</label>
-                <br>
-                <input type="tel" id="fphone" name="fphone" placeholder="083-999-9999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                <br>
-                <!--Subject (W3Schools, 2025)-->
-                <label for="fsubject">Subject</label>
-                <br>
-                <input type="text" id="fsubject" name="fsubject">
-                <br>
-                <!--Message (W3Schools, 2025)-->
-                <label for="fmessage">Message</label>
-                <br>
-                <input type="text" id="fmessage" name="fmessage">
-                <br>
-                <!--Consent (W3Schools, 2025)-->
-                <input type="checkbox" id="concent" name="concent" value="concent">
-                <label for="concent"> I agree for Healing Tails to contact me regarding my inquiry.</label><br>
-            </form>   
-        </p>
-        <button role="application" class="cta">Send message</button>
+      <h2>Connect With Us</h2>
+      <div class="social-links">
+        <a href="#" class="social-link">Facebook</a>
+        <a href="#" class="social-link">Instagram</a>
+        <a href="#" class="social-link">Twitter</a>
+      </div>
     </section>
-    <br>
-    <!--Connect online section (The IIE, 2025)-->
+
     <section class="alt">
-        <h2>Connect with us</h2>
-        <p>
-            Coming soon...
-        </p>
+      <h2>Visit Us</h2>
+      <div class="map-locations">
+        <div class="map-location">
+          <h3>Main Headquarters</h3>
+          <div class="map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.536676254673!2d25.617215315214!3d-33.969980980628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e7ad4e26f7b1c47%3A0x5f0f5e5a5a5a5a5a!2sPort%20Elizabeth%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1620000000000!5m2!1sen!2sza" 
+              width="100%" 
+              height="200" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </div>
+          <p>123 Healing Street, Port Elizabeth, 6001</p>
+        </div>
+        
+        <div class="map-location">
+          <h3>Therapy Center</h3>
+          <div class="map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.123456789012!2d25.627415315214!3d-33.959980980628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e7ad4e26f7b1c47%3A0x6f0f6e6a6a6a6a6a!2sSummerstrand%2C%20Port%20Elizabeth%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1620000000000!5m2!1sen!2sza" 
+              width="100%" 
+              height="200" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </div>
+          <p>456 Hope Avenue, Summerstrand, Port Elizabeth, 6001</p>
+        </div>
+      </div>
     </section>
-    <br>
-    <!--Visit us (The IIE, 2025)-->
-    <section class="alt">
-        <h2>Visit us</h2>
-        <p>
-            Coming soon...
-        </p>
-    </section>
-    <br>
-    <!--Footer (The IIE, 2025)-->
-    <footer>
-        <p>
-            Healing Tails is a small non-profit organization.
-            <br>
-            Together we are creating a world where every tail heals a heart.
-        </p>
-        <p class="rights">&copy; 2025 Healing Tails. All Rights Reserved.</p>
-    </footer>
-    <!--Linking JS (The IIE, 2025)-->
-    <script src="Js/Script.js"></script>
+  </main>
+
+  <footer>
+    <p>
+      Healing Tails is a small non-profit organization.<br>
+      Together we are creating a world where every tail heals a heart.
+    </p>
+    <p class="rights">&copy; 2025 Healing Tails. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    ↑
+  </button>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
-
-<!--
-References:
-- OpenAI (2025) ChatGPT (GPT-5) Availible: https://chatgpt.com/ [Accessed 15 August 2025].
-- The IIE. 2025. Web Development [WEDE5020 Module Manual]. The Independent Institute of Education: Unpublished.
-- W3schools. 2025. HTML Forms. Availible: https://www.w3schools.com/html/html_forms.asp [Accessed 27 August 2025].
--->

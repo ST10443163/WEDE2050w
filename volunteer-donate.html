@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healing Tails | Volunteer & Donate ❤️</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header>
+    <img src="images/HTlogo.png" alt="Healing Tails Logo - A heart and pawprint symbol">
+    <div class="header-text">
+      <h1>Healing Tails</h1>
+      <p>Where Every Tail Heals a Heart</p>
+      <p class="sub">Pairing trained rescue animals with trauma survivors to bring comfort, joy and healing</p>
+    </div>
+  </header>
+  
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="programs.html">Programs</a>
+    <a href="get-involved.html">Get Involved</a>
+    <a href="volunteer-donate.html">Volunteer & Donate</a>
+    <a href="adoption.html">Adopt</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <section id="volunteer" class="alt">
+      <h2>Become a Healing Tails Volunteer</h2>
+      <p>
+        Join our team of compassionate volunteers who help animals and people heal together. 
+        Your time and skills can make a profound difference in the lives of rescue animals 
+        and trauma survivors.
+      </p>
+      
+      <div class="form-container">
+        <form id="volunteerForm" novalidate>
+          <fieldset>
+            <legend>Personal Information</legend>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="volunteerFirstName">First Name *</label>
+                <input type="text" id="volunteerFirstName" name="firstName" required>
+                <span class="error-message" id="volunteerFirstNameError"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="volunteerSurname">Surname *</label>
+                <input type="text" id="volunteerSurname" name="surname" required>
+                <span class="error-message" id="volunteerSurnameError"></span>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="volunteerAge">Age *</label>
+                <input type="number" id="volunteerAge" name="age" min="18" max="120" required>
+                <span class="error-message" id="volunteerAgeError"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="volunteerId">ID Number *</label>
+                <input type="text" id="volunteerId" name="idNumber" required 
+                       pattern="[0-9]{13}" title="Please enter a valid 13-digit South African ID number">
+                <span class="error-message" id="volunteerIdError"></span>
+              </div>
+            </div>
+          </fieldset>
+          
+          <fieldset>
+            <legend>Contact Information</legend>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="volunteerEmail">Email Address *</label>
+                <input type="email" id="volunteerEmail" name="email" required>
+                <span class="error-message" id="volunteerEmailError"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="volunteerPhone">Contact Number *</label>
+                <input type="tel" id="volunteerPhone" name="phone" required 
+                       pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number">
+                <span class="error-message" id="volunteerPhoneError"></span>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="volunteerAddress">Physical Address *</label>
+              <textarea id="volunteerAddress" name="address" rows="3" required></textarea>
+              <span class="error-message" id="volunteerAddressError"></span>
+            </div>
+          </fieldset>
+          
+          <fieldset>
+            <legend>Volunteer Information</legend>
+            
+            <div class="form-group">
+              <label for="volunteerAvailability">When are you available to volunteer? *</label>
+              <select id="volunteerAvailability" name="availability" required>
+                <option value="">Select your availability</option>
+                <option value="weekday-mornings">Weekday Mornings</option>
+                <option value="weekday-afternoons">Weekday Afternoons</option>
+                <option value="weekday-evenings">Weekday Evenings</option>
+                <option value="weekend-mornings">Weekend Mornings</option>
+                <option value="weekend-afternoons">Weekend Afternoons</option>
+                <option value="weekend-evenings">Weekend Evenings</option>
+                <option value="flexible">Flexible - Any time</option>
+              </select>
+              <span class="error-message" id="volunteerAvailabilityError"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="volunteerExperience">Do you have any previous experience with animals? *</label>
+              <textarea id="volunteerExperience" name="experience" rows="4" required 
+                        placeholder="Tell us about any experience with dogs, cats, or other animals..."></textarea>
+              <span class="error-message" id="volunteerExperienceError"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="volunteerSkills">What skills can you bring to Healing Tails?</label>
+              <textarea id="volunteerSkills" name="skills" rows="3" 
+                        placeholder="e.g., animal training, fundraising, administrative skills, etc."></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label for="volunteerInterests">Which areas interest you most? *</label>
+              <div class="checkbox-group-column">
+                <div class="checkbox-option">
+                  <input type="checkbox" id="interest-animal-care" name="interests" value="animal-care">
+                  <label for="interest-animal-care">Animal Care & Socialization</label>
+                </div>
+                <div class="checkbox-option">
+                  <input type="checkbox" id="interest-therapy" name="interests" value="therapy">
+                  <label for="interest-therapy">Therapy Program Assistance</label>
+                </div>
+                <div class="checkbox-option">
+                  <input type="checkbox" id="interest-events" name="interests" value="events">
+                  <label for="interest-events">Events & Fundraising</label>
+                </div>
+                <div class="checkbox-option">
+                  <input type="checkbox" id="interest-admin" name="interests" value="admin">
+                  <label for="interest-admin">Administrative Support</label>
+                </div>
+                <div class="checkbox-option">
+                  <input type="checkbox" id="interest-transport" name="interests" value="transport">
+                  <label for="interest-transport">Animal Transport</label>
+                </div>
+                <div class="checkbox-option">
+                  <input type="checkbox" id="interest-other" name="interests" value="other">
+                  <label for="interest-other">Other (please specify in skills)</label>
+                </div>
+              </div>
+              <span class="error-message" id="volunteerInterestsError"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="volunteerMotivation">Why do you want to volunteer with Healing Tails? *</label>
+              <textarea id="volunteerMotivation" name="motivation" rows="4" required 
+                        placeholder="Share what motivates you to join our mission..."></textarea>
+              <span class="error-message" id="volunteerMotivationError"></span>
+            </div>
+          </fieldset>
+          
+          <fieldset>
+            <legend>References (Optional)</legend>
+            
+            <div class="form-group">
+              <label for="reference1">Reference 1</label>
+              <input type="text" id="reference1" name="reference1" placeholder="Name, Relationship, Contact Info">
+            </div>
+            
+            <div class="form-group">
+              <label for="reference2">Reference 2</label>
+              <input type="text" id="reference2" name="reference2" placeholder="Name, Relationship, Contact Info">
+            </div>
+          </fieldset>
+          
+          <fieldset>
+            <legend>Emergency Contact</legend>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="emergencyName">Emergency Contact Name *</label>
+                <input type="text" id="emergencyName" name="emergencyName" required>
+                <span class="error-message" id="emergencyNameError"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="emergencyRelationship">Relationship *</label>
+                <input type="text" id="emergencyRelationship" name="emergencyRelationship" required>
+                <span class="error-message" id="emergencyRelationshipError"></span>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="emergencyPhone">Emergency Contact Phone *</label>
+                <input type="tel" id="emergencyPhone" name="emergencyPhone" required 
+                       pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number">
+                <span class="error-message" id="emergencyPhoneError"></span>
+              </div>
+            </div>
+          </fieldset>
+          
+          <fieldset>
+            <legend>Consent & Agreement</legend>
+            
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="volunteerPrivacy" name="privacyConsent" required>
+              <label for="volunteerPrivacy">I consent to Healing Tails collecting and processing my personal information for volunteer purposes. *</label>
+              <span class="error-message" id="volunteerPrivacyError"></span>
+            </div>
+            
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="volunteerBackground" name="backgroundCheck" required>
+              <label for="volunteerBackground">I understand that Healing Tails may conduct a background check as part of the volunteer application process. *</label>
+              <span class="error-message" id="volunteerBackgroundError"></span>
+            </div>
+            
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="volunteerLiability" name="liability" required>
+              <label for="volunteerLiability">I understand and accept the risks associated with working with animals and agree to follow all safety protocols. *</label>
+              <span class="error-message" id="volunteerLiabilityError"></span>
+            </div>
+          </fieldset>
+          
+          <div class="form-actions">
+            <button type="submit" class="cta">Submit Volunteer Application</button>
+            <button type="reset" class="muted">Clear Form</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="donate" class="alt">
+      <h2>Support Healing Tails with a Donation</h2>
+      <p>
+        Your generous donation helps us rescue animals, provide therapy sessions, 
+        and create healing connections between animals and people. Every contribution 
+        makes a difference.
+      </p>
+      
+      <div class="donation-options">
+        <div class="donation-option">
+          <h3>Rescue an Animal</h3>
+          <p class="donation-amount">R500</p>
+          <p>Covers initial veterinary care, vaccinations, and microchipping for one rescue animal</p>
+          <button class="cta donation-btn" data-amount="500">Donate R500</button>
+        </div>
+        
+        <div class="donation-option">
+          <h3>Sponsor a Therapy Session</h3>
+          <p class="donation-amount">R300</p>
+          <p>Provides one therapy session for a trauma survivor with our certified therapy animals</p>
+          <button class="cta donation-btn" data-amount="300">Donate R300</button>
+        </div>
+        
+        <div class="donation-option">
+          <h3>Monthly Support</h3>
+          <p class="donation-amount">R150/month</p>
+          <p>Provides ongoing care, food, and training for our rescue animals</p>
+          <button class="cta donation-btn" data-amount="150" data-recurring="true">Donate Monthly</button>
+        </div>
+        
+        <div class="donation-option">
+          <h3>Custom Amount</h3>
+          <p class="donation-amount">Any amount</p>
+          <p>Choose your own donation amount to support our programs</p>
+          <button class="cta" id="customDonationBtn">Custom Donation</button>
+        </div>
+      </div>
+      
+      <div class="form-container" id="donationFormContainer" style="display: none;">
+        <form id="donationForm" novalidate>
+          <input type="hidden" id="donationAmount" name="amount">
+          <input type="hidden" id="isRecurring" name="isRecurring" value="false">
+          
+          <fieldset>
+            <legend>Donation Information</legend>
+            
+            <div class="form-group" id="customAmountGroup" style="display: none;">
+              <label for="customAmount">Donation Amount (ZAR) *</label>
+              <input type="number" id="customAmount" name="customAmount" min="10" step="10">
+              <span class="error-message" id="customAmountError"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="donationType">Donation Type</label>
+              <select id="donationType" name="donationType">
+                <option value="general">General Support</option>
+                <option value="rescue">Animal Rescue</option>
+                <option value="therapy">Therapy Programs</option>
+                <option value="facility">Facility Improvements</option>
+                <option value="emergency">Emergency Medical Fund</option>
+              </select>
+            </div>
+            
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="recurringDonation" name="recurringDonation">
+              <label for="recurringDonation">Make this a monthly recurring donation</label>
+            </div>
+          </fieldset>
+          
+          <fieldset>
+            <legend>Donor Information</legend>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="donorFirstName">First Name *</label>
+                <input type="text" id="donorFirstName" name="firstName" required>
+                <span class="error-message" id="donorFirstNameError"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="donorSurname">Surname *</label>
+                <input type="text" id="donorSurname" name="surname" required>
+                <span class="error-message" id="donorSurnameError"></span>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="donorEmail">Email Address *</label>
+              <input type="email" id="donorEmail" name="email" required>
+              <span class="error-message" id="donorEmailError"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="donationDedication">Dedication (Optional)</label>
+              <input type="text" id="donationDedication" name="dedication" placeholder="In memory/honor of someone">
+            </div>
+            
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="anonymousDonation" name="anonymous">
+              <label for="anonymousDonation">I would like this donation to remain anonymous</label>
+            </div>
+          </fieldset>
+          
+          <fieldset>
+            <legend>Payment Information</legend>
+            
+            <div class="form-group">
+              <label for="paymentMethod">Payment Method *</label>
+              <select id="paymentMethod" name="paymentMethod" required>
+                <option value="">Select payment method</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="debit-card">Debit Card</option>
+                <option value="eft">Electronic Funds Transfer (EFT)</option>
+                <option value="paypal">PayPal</option>
+              </select>
+              <span class="error-message" id="paymentMethodError"></span>
+            </div>
+            
+            <div id="cardDetails" style="display: none;">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="cardNumber">Card Number *</label>
+                  <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456">
+                  <span class="error-message" id="cardNumberError"></span>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="expiryDate">Expiry Date *</label>
+                  <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY">
+                  <span class="error-message" id="expiryDateError"></span>
+                </div>
+                
+                <div class="form-group">
+                  <label for="cvv">CVV *</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="123">
+                  <span class="error-message" id="cvvError"></span>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="cardholderName">Cardholder Name *</label>
+                <input type="text" id="cardholderName" name="cardholderName">
+                <span class="error-message" id="cardholderNameError"></span>
+              </div>
+            </div>
+            
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="savePayment" name="savePayment">
+              <label for="savePayment">Save my payment details for future donations</label>
+            </div>
+          </fieldset>
+          
+          <div class="form-actions">
+            <button type="submit" class="cta">Complete Donation</button>
+            <button type="button" id="cancelDonation" class="muted">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Healing Tails is a small non-profit organization.<br>
+      Together we are creating a world where every tail heals a heart.
+    </p>
+    <p class="rights">&copy; 2025 Healing Tails. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    ↑
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
