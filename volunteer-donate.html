@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Healing Tails | Volunteer & Donate ❤️</title>
+  <!-- Main stylesheet for consistent branding and layout -->
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+  <!-- Website header with logo and organization information -->
   <header>
     <img src="images/HTlogo.png" alt="Healing Tails Logo - A heart and pawprint symbol">
     <div class="header-text">
@@ -16,6 +18,7 @@
     </div>
   </header>
   
+  <!-- Main navigation menu for site-wide page access -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -26,7 +29,9 @@
     <a href="contact.html">Contact</a>
   </nav>
 
+  <!-- Main content area containing volunteer and donation sections -->
   <main>
+    <!-- Volunteer Application Section -->
     <section id="volunteer" class="alt">
       <h2>Become a Healing Tails Volunteer</h2>
       <p>
@@ -37,6 +42,7 @@
       
       <div class="form-container">
         <form id="volunteerForm" novalidate>
+          <!-- Personal Information -->
           <fieldset>
             <legend>Personal Information</legend>
             
@@ -70,6 +76,7 @@
             </div>
           </fieldset>
           
+          <!-- Contact Information -->
           <fieldset>
             <legend>Contact Information</legend>
             
@@ -95,6 +102,7 @@
             </div>
           </fieldset>
           
+          <!-- Volunteer Information -->
           <fieldset>
             <legend>Volunteer Information</legend>
             
@@ -128,7 +136,7 @@
             
             <div class="form-group">
               <label for="volunteerInterests">Which areas interest you most? *</label>
-              <div class="checkbox-group-column">
+              <div class="checkbox-group-column left-aligned">
                 <div class="checkbox-option">
                   <input type="checkbox" id="interest-animal-care" name="interests" value="animal-care">
                   <label for="interest-animal-care">Animal Care & Socialization</label>
@@ -165,6 +173,7 @@
             </div>
           </fieldset>
           
+          <!-- References -->
           <fieldset>
             <legend>References (Optional)</legend>
             
@@ -179,6 +188,7 @@
             </div>
           </fieldset>
           
+          <!-- Emergency Contact -->
           <fieldset>
             <legend>Emergency Contact</legend>
             
@@ -206,6 +216,7 @@
             </div>
           </fieldset>
           
+          <!-- Consent -->
           <fieldset>
             <legend>Consent & Agreement</legend>
             
@@ -228,6 +239,7 @@
             </div>
           </fieldset>
           
+          <!-- Form Actions -->
           <div class="form-actions">
             <button type="submit" class="cta">Submit Volunteer Application</button>
             <button type="reset" class="muted">Clear Form</button>
@@ -236,6 +248,7 @@
       </div>
     </section>
 
+    <!-- Donation Section -->
     <section id="donate" class="alt">
       <h2>Support Healing Tails with a Donation</h2>
       <p>
@@ -390,6 +403,7 @@
             </div>
           </fieldset>
           
+          <!-- Form Actions -->
           <div class="form-actions">
             <button type="submit" class="cta">Complete Donation</button>
             <button type="button" id="cancelDonation" class="muted">Cancel</button>
@@ -399,6 +413,7 @@
     </section>
   </main>
 
+  <!-- Site footer with copyright and organization information -->
   <footer>
     <p>
       Healing Tails is a small non-profit organization.<br>
@@ -412,6 +427,7 @@
     ↑
   </button>
 
+  <!-- JavaScript file for interactive features -->
   <script src="js/script.js"></script>
 </body>
 </html>
